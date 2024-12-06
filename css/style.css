@@ -1,0 +1,94 @@
+@import url(components/variables.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+ }
+
+ body {
+    font-family: "Inter", sans-serif;
+    line-height: 1.7;
+    color: var(--text-color);
+    background-color: var(--color-bg);
+ }
+
+ .container {
+   width: var(--container-width-lg);
+   margin: 0 auto;
+ }
+
+ section{
+    padding: 1rem 0;
+ }
+
+ section h2 {
+    text-align: center;
+    margin-bottom: 4rem;
+ }
+
+ h1,h2,h3,h4,h5{
+    line-height: 1.2;
+ }
+
+ h1 {
+    font-size: 2.4rem;
+ }
+
+ h2 {
+    font-size: 2rem;
+ }
+
+ h3 {
+    font-size: 1.6rem;
+ }
+
+ h4 {
+    font-size: 1.3rem;
+ }
+
+ a {
+    color: var(--text-color)
+ }
+ 
+ img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+ }
+
+ .btn {
+    display: inline-block;
+    background-color: var(--color-white);
+    color: var(--color-black);
+    padding: 0.5rem 2rem;
+    border: 1px solid transparent;
+    font-weight: 500;
+    transition: var(--transition);
+    border-radius: 1.6rem;
+ }
+
+ .btn:hover {
+   color: var(--color-black);
+   transform: scale(1.1);
+   box-shadow: 0px 4px 4px var(--color-shadow);
+}
+
+.btn-primary {
+    background-color: var(--color-bg1);
+    color: var(--color-black);
+    border-radius: 1rem;
+}
+
+@media (max-width: 1000px) {
+   .container {
+      width: var(--container-width-md);
+      margin: 0 auto;
+    }
+}
+
+ 

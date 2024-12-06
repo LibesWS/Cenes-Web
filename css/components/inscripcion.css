@@ -1,0 +1,62 @@
+@import url(variables.css);
+
+.enrollment{
+    margin-top: 5rem;
+    padding-bottom: 2rem;
+}
+
+.enrollment h1{
+    text-align: center;
+    margin-bottom: 7rem;
+    padding-bottom: 1rem;
+}
+
+.enrollment__box {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    place-items: center;
+}
+
+.enrollment__info {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    place-items: center;
+    margin-bottom: 10rem;
+}
+
+.enrollment__requirements{
+    display: grid;
+    place-items: center;
+}
+
+.enrollment__number{
+    transform: scale(3);
+    margin-bottom: 1rem;
+}
+
+.enrollment__requirements p{ 
+    text-align: center;
+    margin: 0 0 2rem;
+
+}
+
+@media (max-width: 1000px) {
+    .enrollment__box{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px; 
+        margin-bottom: 3rem;
+    }
+
+    .enrollment__info{
+        margin-bottom: 3rem;
+    }
+
+    .enrollment__info span{
+        transform: scale(3);
+    }
+}

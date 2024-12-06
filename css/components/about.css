@@ -1,0 +1,122 @@
+@import url(variables.css);
+
+.values {
+    margin-top: 5rem;
+}
+
+.mission__title{
+    display: flex;
+    justify-content: left;
+    place-items: center;
+    margin-bottom: 1rem;
+}
+
+.mission__text {
+    padding-top: 1rem ;
+    border-top: 3px solid var(--color-bg1);
+}
+
+.v__title h1 {
+    margin-bottom: 1rem;
+}
+
+.v__title span{
+    transform: scale(5);
+    margin-right: 5rem;
+    margin-left: 5rem;
+    margin-top: 1rem;
+}
+
+.v__text {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.vision__text {
+    padding-top: 1rem;
+    border-top: 3px solid var(--color-bg2);
+
+}
+
+.vision__title{
+    display: flex;
+    justify-content: right;
+    flex-direction: row-reverse;
+    place-items: center;
+    margin-bottom: 1rem;
+}
+
+.review__title {
+    text-align: center;
+}
+
+.review__content {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    gap: 1rem;
+    place-items: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    margin-bottom: 2rem;
+    border-top: 3px solid var(--color-bg5);
+}
+
+
+@media (max-width: 1000px) {
+    .v__title{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        place-items: center;
+        margin-bottom: 1rem;
+    }
+
+
+    .v__title span{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .v__text {
+        margin: 1rem 1rem 2rem 1rem;
+        text-align: center;
+    }
+
+    .review__content{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 2rem;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .v__title{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        place-items: center;
+        margin-bottom: 1rem;
+    }
+
+
+    .v__title span{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .v__text{
+        margin-left: 1rem;
+        margin-right: 1rem;
+        text-align: center;
+    }
+
+    .review__content{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 2rem;
+    }
+
+    .review__text {
+        text-align: center;
+    }
+
+}

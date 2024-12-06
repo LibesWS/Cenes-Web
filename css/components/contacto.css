@@ -1,0 +1,45 @@
+@import url(variables.css);
+
+.contact{
+    margin-top: 5rem;
+    background-color: var(--color-bg1);
+    padding-bottom: 2rem;
+}
+
+.contact h1{
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 5px solid var(--color-light);
+}
+
+.contact__info {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    place-items: center;
+}
+
+.contact__info span{
+    transform: scale(2);
+    margin-bottom: 1rem;
+}
+
+.map__container{
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+@media (max-width: 1000px) {
+    .contact__info{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px; 
+        margin-bottom: 3rem;
+    }
+}

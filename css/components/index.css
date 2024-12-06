@@ -1,0 +1,340 @@
+@import url(variables.css);
+
+/* !================== HEADER ==================! */
+
+header {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 1rem;
+}
+
+.head__container {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    align-items: center;
+    gap: 4rem;
+    height: 100%;
+    /*margin-bottom: 5rem;*/
+}
+
+.head {
+    position: relative;
+    top: 5rem;
+    height: 50vh;
+    margin-bottom: 1rem;
+}
+
+.head__img img {
+    height: 70vh;
+}
+
+.header__left{
+    background-color: rgba(255,255,255,0.9);
+    border-radius: 1em;
+    border-top-left-radius: 0;
+    box-shadow: 0px 4px 4px var(--color-shadow);
+    text-shadow: 0px 4px 4px var(--color-shadow);
+    transition: var(--transition);
+}
+
+.header__left p{
+    margin: 1rem 1rem 2rem 1rem;
+}
+
+.header__left h3{
+    margin-top: 1rem;
+    align-items: center;
+    padding-left: 1rem;
+}
+
+.header__left:hover{
+    transform: scale(1.01);
+}
+
+/* !================== POBLACIÓN ==================! */
+
+.poblation {
+    background-color: var(--color-bg1);
+}
+
+.poblation__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 5rem;
+    height: 100%;
+    text-align: center;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+.poblation__left{
+    padding-top: 0.5rem ;
+}
+
+.poblation a {
+    font-size: 0.8rem;
+}
+
+.poblation__left h1{
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.poblation__left p{
+    padding-bottom: 1rem;
+}
+
+.poblation__right{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    place-items: center;
+}
+
+.poblation__botton {
+    display: grid;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    place-items: center;
+}
+
+.population {
+    background-color: var(--color-white);
+    width: 65%;
+    height: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-radius: 50rem;
+    transition: var(--transition);
+}
+
+.population:hover{
+    transform: scale(1.1);
+    color: var(--color-black);
+    box-shadow: 0px 4px 4px var(--color-shadow);
+}
+
+/* !================== NIVELES ==================! */
+
+.level__container{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    gap: 4rem;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.level__section{
+    background-color: var(--color-gray);
+    margin: 2rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    transition: var(--transition);
+}
+
+.level__section:hover{
+    transform: scale(1.1);
+    color: var(--color-black);
+    box-shadow: 0px 4px 4px var(--color-shadow);
+}
+
+.level__left h1{
+    padding-bottom: 1rem;
+}
+
+.level__left p, h3{
+    text-align: left;
+    padding-bottom: 0.7rem;
+    padding-left: 1rem;
+}
+
+.level__img img{
+    border-radius: 50%;
+    width: 100%;
+}
+
+/* !================== HORARIO ==================! */
+
+.schedule__container{
+    height: 100%;
+}
+
+.schedule__scholar, .schedule__miscelaneus {
+    background-color: var(--color-gray);
+    text-align: center;
+
+}
+
+.schedule__container h1{
+    padding-left: 10%;
+    padding-bottom: 1rem;
+    text-shadow: 0px 4px 4px var(--color-shadow);
+}
+
+.scholar__container, .miscelaneus__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    color: var(--color-white);
+    box-shadow: 0px 4px 4px var(--color-shadow);
+    text-shadow: 0px 4px 4px var(--color-shadow);
+    background-color: var(--color-bg2);
+}
+
+.miscelaneus__left {
+    background-color: var(--color-bg5);
+}
+
+.miscelaneus__right {
+    background-color: var(--color-bg5);
+}
+
+.s__cont{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+}
+
+.scholar__left, .scholar__right, .miscelaneus__left, .miscelaneus__right{
+    transition: var(--transition);
+}
+
+.miscelaneus__left:hover, .miscelaneus__right:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 4px 4px var(--color-shadow);
+}
+
+.schedule__scholar{
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+}
+
+/* !================== ACTIVIDADES ==================! */
+
+.activities{
+    background-color: var(--color-bg4);
+}
+
+.activities h1{
+    line-height: 1;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.activities__container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 4rem;
+}
+
+.activities__left p {
+    margin: 1rem 0 2rem;
+    align-items: center;
+    align-content: center;
+    place-items: center;
+}
+
+.activities__right {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.activity {
+    background-color: var(--color-white);
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    transition: var(--transition);
+}
+
+.activity:hover{
+    transform: scale(1.1);
+    box-shadow: 0 4rem 4rem var(--color-shadow);
+}
+
+.activity h5 {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+@media (max-width: 1000px) {
+    .head {
+        height: 100%;
+    }
+    .head img {
+        height: 100%;
+    }
+
+    .head__container {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        place-items: center;
+    }
+
+    /* !POBLACION */
+
+    .poblation__container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        place-items: center;
+        gap: 0;
+    }
+
+    .poblation__left p{
+        padding-bottom: 2rem;
+    }
+
+    .poblation__right{
+        place-items: center;
+    }
+
+    /* !Niveles */
+
+    .level__container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+
+    .scholar__container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    /* !Actividades */
+
+    .activities__container {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        place-items: center;
+        place-content: center;
+    }
+    
+    .activities h1{
+        margin-bottom: 1rem;
+    }
+    
+    .activities__left{
+        display: grid;
+        place-items: center;
+        place-content: center;
+    }
+    
+    .activities__left p{
+    text-align: center;
+    }
+
+    .activities__right{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        place-items: center;
+        place-content: center;
+        gap: 0;
+    }
+
+}

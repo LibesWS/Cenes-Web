@@ -1,0 +1,129 @@
+@import url(variables.css);
+
+/* !================== Estilo General ==================! */
+
+header {
+    position: relative;
+    top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.header__title {
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+.header__activities {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 5rem;
+    place-content: center;
+    place-items: center;
+}
+
+.header__activities i {
+    display: flex;
+    justify-content: center;
+    transform: scale(2);
+    margin-bottom: 1rem;
+}
+
+/* !================== ACTIVIDADES ==================! */
+
+.activities {
+    padding-top: 5rem;
+}
+
+.activity__title {
+    display: flex;
+    justify-content: left;
+    place-items: center;
+}
+
+.activity__title span {
+    margin: 0 3rem 0 3rem;
+    transform: scale(3);
+}
+
+.activity__title h1 {
+    margin-bottom: 0.5rem;
+}
+
+.activity__content {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    border-top: 3px solid var(--color-shadow);
+    place-items: center;
+    padding-bottom: 2rem;
+    margin-bottom: 3rem;
+}
+
+.activity__text p {
+    margin: 1rem 3rem 1rem 5rem;
+    padding-left: 1rem;
+    font-size: 1.5rem;
+}
+
+.reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: right;
+}
+
+.activity img {
+    transform: scale(0.7);
+}
+
+.reverse p{
+    margin: 1rem 5rem 1rem 3rem;
+    padding-right: 1rem;
+    text-align: right;
+}
+
+
+@media (max-width: 1000px) {
+
+    .header__activities {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
+
+    .header__title {
+        margin-bottom: 0;
+    }
+
+    .activity__title {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        text-align: center;
+        place-items: center;
+        margin-bottom: 1rem;
+    }
+
+    .activity__title span {
+        margin-bottom: 2rem;
+        transform: scale(4);
+    }
+
+    .activity__text p {
+        font-size: 1.3rem;
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+
+    }
+
+    .activity__content {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        border-top: 3px solid var(--color-shadow);
+        place-items: center;
+        padding-bottom: 2rem;
+        margin-bottom: 3rem;
+    }
+
+}
